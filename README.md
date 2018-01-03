@@ -7,5 +7,14 @@
   runs out.
 
 ## Usage:
-* `play <station> on Google Play Music`
+* You will need to register a Google Play Music username and password with the Mycroft
+  dashboard.  Once this skill has been added, go to https://home.mycroft.ai, then to the
+  "Skills" page, and enter your Google Play username and an appropriate password.  If you
+  use two-factor auth on your Google account, go to https://myaccount.google.com/security
+  and locate "App passwords" on that page.  Follow the instructions on the "App passwords"
+  page for making a new application-specific password for your Mycroft instance.
+
+* `play <station> on Google Play Music` : This plays a "curated station."  Often, these are
+  genre stations, such as "yacht rock", but note that not all generic genres have a matching
+  curated station.  For example, "jazz" doesn't seem to work yet.
 
