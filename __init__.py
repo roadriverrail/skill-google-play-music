@@ -43,24 +43,9 @@ class GooglePlayMusicSkill(MycroftSkill):
         self.audioservice = None
 
     def initialize(self):
-#        song_intent = IntentBuilder("GooglePlayMusicSongArtistIntent").require(
-#            "GooglePlayMusicKeyword").require("Song").require("Artist").build()
-#        self.register_intent(song_intent, self.handle_intent)
-
-
         self.register_intent_file('play.genre.intent', self.handle_intent)
 
-#        station_intent = IntentBuilder("GooglePlayMusicStationIntent").require(
-#            "GooglePlayMusicKeyword").require("Query").build()
-#        self.register_intent(station_intent, self.handle_intent)
-
-
         self.register_intent_file('stop.intent', self.handle_stop)
-
-#        stop_intent = IntentBuilder("GooglePlayMusicStopIntent") \
-#                .require("GooglePlayMusicStopVerb") \
-#                .require("GooglePlayMusicKeyword").build()
-#        self.register_intent(stop_intent, self.handle_stop)
 
         if not self.settings['account_name'] or not self.settings['account_password']:
             self.speak_dialog('google-play-no-settings')
