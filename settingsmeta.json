@@ -1,0 +1,25 @@
+{
+    "identifier": "GooglePlayMusicSkill",
+    "name": "Google Play Music Skill",
+    "skillMetadata": {
+        "sections": [
+            {
+                "name": "Google Play Music Login",
+                "fields": [
+                    {
+                        "name": "account_name",
+                        "type": "text",
+                        "label": "Google Play Username",
+                        "value": ""
+                    },
+                    {
+                        "name": "account_password",
+                        "type": "password",
+                        "label": "Password",
+                        "value": ""
+                    }    
+                ] 
+            }
+        ]
+    }
+}
